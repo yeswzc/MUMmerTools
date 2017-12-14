@@ -29,5 +29,5 @@ Chr1 16740 rs_Chr1_16740 GGCAG G . PASS . GT 1/1 1-3:
 will return: 
 Chr1 44554 rs_Chr1_44554 A ATA . PASS . GT 1/1
 
-
+Note: The reverse complementary or not is ignored. Because I donot care.
 ############################
