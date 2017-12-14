@@ -53,15 +53,13 @@ while(<>){
 	if($e[1] eq "."){ #reference deletion, insertion
 		$ref=substr $ref,1,2;
 		$alt=substr $alt,1,2;
-		$ref=~s/\.//g;
-		#print "$e[16]\t$e[0]\trs_$e[16]_$e[0]\t$ref\t$alt\t.\tPASS\t.\tGT\t1/1\n";
+		$ref=~s/\.//g;		
 		$toP="$e[16]\t$e[0]\trs_$e[16]_$e[0]\t$ref\t$alt\t.\tPASS\t.\tGT\t1/1\n";
 		push @t,[@e];
 	}elsif($e[2] eq "."){ #deletion
 		$ref=substr($ref,1,2);
 		$alt=substr($alt,1,2);
-		$alt=~s/\.//g;
-		#print "$e[16]\t$e[0]\trs_$e[16]_$e[0]\t$ref\t$alt\t.\tPASS\t.\tGT\t1/1\n";
+		$alt=~s/\.//g;		
 		$toP="$e[16]\t$e[0]\trs_$e[16]_$e[0]\t$ref\t$alt\t.\tPASS\t.\tGT\t1/1\n";
 		push @t,[@e];
 	}else{
