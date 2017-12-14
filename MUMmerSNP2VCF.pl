@@ -8,11 +8,12 @@ my $id=shift;
 my $refsize=shift;
 print "##fileformat=VCFv4.1\n##FORMAT=<ID=GT,Number=1,Type=String,Description=\"Genotype\">\n";
 open FASIZE,"$refsize" or die $!;
-while(<FASIE>){
+while(<FASIZE>){
 	my @e=split;
 	next unless @e>=2;
 	print "##contig=<ID=$e[0],length=$e[1]>\n";
 }
+close FASIZE;
 print "#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\t$id\n";
 my @t; #just for indels
 my $toP; #just for indels
