@@ -70,4 +70,4 @@ while(<>){
 		print "$e[16]\t$e[0]\trs_$e[16]_$e[0]\t$e[1]\t$e[2]\t.\tPASS\t.\tGT\t1/1\n";
 	}
 }
-
+print $toP if $toP;
