@@ -1,7 +1,9 @@
 #!/usr/bin/perl -w
 use strict;
 
-die "$0 [ID] [ref.sizes] [show-snp.out]\n" unless @ARGV==3;
+die "\t$0 [ID] [ref.sizes] [show-snp.out]
+\tshow-snps -Clr -x1
+\n" unless @ARGV==3;
 #Zhichao Wu
 #
 my $id=shift;
